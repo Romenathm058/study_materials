@@ -1,128 +1,132 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MAKAUT MINDS</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #2b4eff;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    main {
-      padding: 40px;
-      text-align: center;
-    }
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-    .button {
-      background-color: #2b4eff;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
-    <h1>MAKAUT MINDS</h1>
+    <h1><B>NOOB INGINEER</B></h1>
     <p>Study Materials for MAKAUT 1ST year Engineering Students</p>
-    <H3><B><< CSE || ECE || EE || ME || CE >></B></H3>
+    <h3><b>&lt;&lt; CSE || ECE || EE || ME || CE &gt;&gt;</b></h3>
   </header>
   <main>
     <h2>Welcome!</h2>
     <p><b>Find notes, previous year papers, youtube playlist, and more.</b></p>
     <a href="#materials" class="button">Tap on the image to open the material</a>
-    <section id="materials" style="margin-top: 40px; text-align: left;">
+    <section id="materials">
       <h2>📚 Study Materials</h2>
-      <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-        <div><a href="firstyear.pdf" target="_blank"><img src="syllabusfont.jpg" alt="syllabus" width="130" style="vertical-align: middle; margin-right: 100px;"></a></div>
-        <div style="text-align: center;"><a href="https://drive.google.com/drive/folders/1SlYBHYzir6W9nfFgo4zJCxEyGEQa5zCv?usp=drive_link" target="_blank"><img src="https://rukminim2.flixcart.com/image/704/844/xif0q/regionalbooks/m/g/s/makaut-organizer-for-b-tech-all-branches-1st-semester-btech-1st-original-imagvhzye3ax6kbt.jpeg?q=90&crop=false" alt="makaut organizer" width="130" style="vertical-align: middle; margin-right: 100px;"></a></div>
-        <div style="text-align: center;"><a href="https://drive.google.com/drive/folders/1dQTzdSDAg-FHAlvtPfDCGT9HsvqYveJN" target="_blank"><img src="physicsbook.jpg" alt="physic book" width="130" style="vertical-align: middle; margin-right: 100px;"></a></div>
-        <div style="text-align: center;"><a href="The Ultimate C Handbook.pdf" target="_blank"><img src="cdhfont.jpg" alt="C handbook" width="130" style="vertical-align: middle; margin-right: 100px;"></a></div>
-        <div style="text-align: center;">
-          <a href="https://drive.google.com/drive/folders/1Kowizkc9LOFlScBWp0BM44dgFoj47pe_" target="_blank">
-            <img src="https://m.media-amazon.com/images/I/61o55-imGWL._UF1000,1000_QL80_.jpg" alt="BEE" width="130" style="vertical-align: middle; margin-right: 100px;">
+      <div class="cards-container">
+        <div class="card">
+          <a href="firstyear.pdf" target="_blank">
+            <img src="syllabusfont.jpg" alt="syllabus" />
           </a>
-          <div><b></b></div>
+        </div>
+        <div class="card">
+          <a href="https://drive.google.com/drive/folders/1SlYBHYzir6W9nfFgo4zJCxEyGEQa5zCv?usp=drive_link" target="_blank">
+            <img src="https://rukminim2.flixcart.com/image/704/844/xif0q/regionalbooks/m/g/s/makaut-organizer-for-b-tech-all-branches-1st-semester-btech-1st-original-imagvhzye3ax6kbt.jpeg?q=90&crop=false" alt="makaut organizer" />
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://drive.google.com/drive/folders/1dQTzdSDAg-FHAlvtPfDCGT9HsvqYveJN" target="_blank">
+            <img src="physicsbook.jpg" alt="physics book" />
+          </a>
+        </div>
+        <div class="card">
+          <a href="The Ultimate C Handbook.pdf" target="_blank">
+            <img src="cdhfont.jpg" alt="C handbook" />
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://drive.google.com/drive/folders/1Kowizkc9LOFlScBWp0BM44dgFoj47pe_" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/61o55-imGWL._UF1000,1000_QL80_.jpg" alt="BEE" />
+          </a>
         </div>
       </div>
-      <div style="text-align: center; margin-top: 10px;">
-        <a href="https://drive.google.com/drive/folders/1-t8cyyKntYvCXmzuCgXw6pslaFjBUfR0" target="_blank"><img src="https://www.levelupias.com/wp-content/uploads/2024/07/pyq-3-1.png" alt="pyq" width="130" style="vertical-align: middle; margin-right: 100px;"></a>
+      <div class="cards-container" style="margin-top: 10px;">
+        <a href="https://drive.google.com/drive/folders/1-t8cyyKntYvCXmzuCgXw6pslaFjBUfR0" target="_blank">
+          <img src="https://www.levelupias.com/wp-content/uploads/2024/07/pyq-3-1.png" alt="pyq" class="card" />
+        </a>
       </div>
-      <br>
-      <br>
-      <h2><img src="https://i0.wp.com/socialkings.online/wp-content/uploads/2021/03/Artboard-1yt.png?fit=650%2C534&ssl=1" alt="youtube logo" width="150px" style="vertical-align: middle; margin-right: 10px;"><b>PLAYLISTS</b></h2>
-      
-      <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-  <!-- 1st Sem Math Playlist -->
-  <div style="text-align: center;">
-    <a href="https://www.youtube.com/watch?v=hZ11S7U-omo&list=PLn3Wz38keZOdNAJWL4WC9iYW5gnzfY3ey&pp=0gcJCV8EOCosWNin" target="_blank">
-      <img src="https://i.ytimg.com/vi/hZ11S7U-omo/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBseRJKlNa1x3FFjFSVH_KahVVOFA.jpg" alt="math playlist 1st sem" style="width: 300px; height: auto;">
-    </a>
-    <h4>1ST SEM MATH</h4>
-  </div>
-
-  <!-- Add another playlist here -->
-  <div style="text-align: center;">
-    <a href="https://youtube.com/playlist?list=PLohtAIfLLw8c5V9dTc4S1auZUfjDYarbM&si=1b_DHE4cv27Tbeix" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="new playlist" style="width: 300px; height: auto;">
-    </a>
-    <h4>Module-I: DC Circuits </h4>
-  </div>
-  <div style="text-align: center;">
-    <a href="https://youtube.com/playlist?list=PLohtAIfLLw8f53yvI4ue84hn4k_vqiIWX&si=excCo6RyVhBm4HiV" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="new playlist" style="width: 300px; height: auto;">
-    </a>
-    <h4>Module-II: AC Circuits </h4>
-  </div>
-  <div style="text-align: center;">
-    <a href="https://youtube.com/playlist?list=PLohtAIfLLw8fFa2TGj3ZjUvS42nWFUQK3&si=gQhgVxP1hnVu0Xjo" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="transformer" style="width: 300px; height: auto;">
-    </a>
-    <h4>Module-III: TRANSFORMER </h4>
-  </div>
-  <div style="text-align: center;">
-    <a href="https://youtube.com/playlist?list=PLohtAIfLLw8cdi1iOLyLNX1f839KSXDnl&si=PYmai26cT50Dp9ID" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="electrical machines" style="width: 300px; height: auto;">
-    </a>
-    <h4>Module-IV: Electrical Machines </h4>
-  </div>
-  <div style="text-align: center;">
-    <a href="https://youtube.com/playlist?list=PLohtAIfLLw8chjm02VJ7qZMKM9w3y7r3f&si=W6SGd4blq1sBmFvu" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="electrical machines" style="width: 300px; height: auto;">
-    </a>
-    <h4>Module-V: power converter </h4>
-  </div>
-  <div style="text-align: center;">
-    <a href="https://youtube.com/playlist?list=PLohtAIfLLw8eD9wv9Gj7CVZ76n6BpR7he&si=pS2aHSecBKTVI8JD" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="electrical machines" style="width: 300px; height: auto;">
-    </a>
-    <h4>Module-VI: Electrical installation </h4>
-  </div>
-  <div style="text-align: center;">
-    <a href="https://youtu.be/aZb0iu4uGwA?si=bRZ2CGY7M26Jy3NU" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJiJZkY3HhfJMMujhRVe35rMZAxccsMSg5woYZM5nnTlyRyOlIEBj3k85O6H7XbJMg_M&usqp=CAU" alt="c language" style="width: 300px; height: auto;">
-    </a>
-    <h4>C LANGUAGE</h4>
-  </div>
-  </div>
+      <h2 class="no-underline">
+        <div class="playlist-title-box">
+          <img src="https://i0.wp.com/socialkings.online/wp-content/uploads/2021/03/Artboard-1yt.png?fit=650%2C534&ssl=1" alt="youtube logo" class="youtube-logo" />
+          <b>PLAYLISTS</b>
+        </div>
+      </h2>
+      <div class="cards-container">
+        <div class="card">
+          <a href="https://www.youtube.com/watch?v=hZ11S7U-omo&list=PLn3Wz38keZOdNAJWL4WC9iYW5gnzfY3ey&pp=0gcJCV8EOCosWNin" target="_blank">
+            <img src="https://i.ytimg.com/vi/hZ11S7U-omo/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBseRJKlNa1x3FFjFSVH_KahVVOFA.jpg" alt="math playlist 1st sem" />
+          </a>
+          <h4>1ST SEM MATH</h4>
+        </div>
+        <div class="card">
+          <a href="https://youtube.com/playlist?list=PLohtAIfLLw8c5V9dTc4S1auZUfjDYarbM&si=1b_DHE4cv27Tbeix" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="new playlist" />
+          </a>
+          <h4>Module-I: DC Circuits</h4>
+        </div>
+        <div class="card">
+          <a href="https://youtube.com/playlist?list=PLohtAIfLLw8f53yvI4ue84hn4k_vqiIWX&si=excCo6RyVhBm4HiV" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="new playlist" />
+          </a>
+          <h4>Module-II: AC Circuits</h4>
+        </div>
+        <div class="card">
+          <a href="https://youtube.com/playlist?list=PLohtAIfLLw8fFa2TGj3ZjUvS42nWFUQK3&si=gQhgVxP1hnVu0Xjo" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="transformer" />
+          </a>
+          <h4>Module-III: TRANSFORMER</h4>
+        </div>
+        <div class="card">
+          <a href="https://youtube.com/playlist?list=PLohtAIfLLw8cdi1iOLyLNX1f839KSXDnl&si=PYmai26cT50Dp9ID" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="electrical machines" />
+          </a>
+          <h4>Module-IV: Electrical Machines</h4>
+        </div>
+        <div class="card">
+          <a href="https://youtube.com/playlist?list=PLohtAIfLLw8chjm02VJ7qZMKM9w3y7r3f&si=W6SGd4blq1sBmFvu" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="electrical machines" />
+          </a>
+          <h4>Module-V: power converter</h4>
+        </div>
+        <div class="card">
+          <a href="https://youtube.com/playlist?list=PLohtAIfLLw8eD9wv9Gj7CVZ76n6BpR7he&si=pS2aHSecBKTVI8JD" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsE_T7XjuNt4T3viwxGn_BbxVCqwMMg4oR1r9T3BfdWlJ4qYOl0aH_BlZOTvt0pahwsA&usqp=CAU" alt="electrical machines" />
+          </a>
+          <h4>Module-VI: Electrical installation</h4>
+        </div>
+        <div class="card">
+          <a href="https://youtu.be/aZb0iu4uGwA?si=bRZ2CGY7M26Jy3NU" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJiJZkY3HhfJMMujhRVe35rMZAxccsMSg5woYZM5nnTlyRyOlIEBj3k85O6H7XbJMg_M&usqp=CAU" alt="c language" />
+          </a>
+          <h4>C LANGUAGE</h4>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
-    &copy; 2025 MAKAUT MINDS. All rights reserved.
+    &copy; 2025 NOOB INGINEER. All rights reserved.
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/romenath-mondal-9a3a30328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+        <i class="fab fa-linkedin" style="font-size: 32px; color: #0077b5;"></i>
+      </a>
+      <a href="https://youtube.com/@noobingineer018?si=XDxCwJNwnTFyjvxQ" target="_blank" title="YouTube" aria-label="YouTube">
+        <i class="fab fa-youtube" style="font-size: 32px; color: #FF0000;"></i>
+      </a>
+      <a href="https://www.instagram.com/a_noob_engineer?igsh=b2xscWczOWdqaGt1" target="_blank" title="Instagram" aria-label="Instagram">
+        <i class="fab fa-instagram" style="font-size: 32px; color: #c32aa3;"></i>
+      </a>
+    </div>
   </footer>
+
+
+  <script src="index.js"></script>
+  
 </body>
 </html>
