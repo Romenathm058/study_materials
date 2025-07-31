@@ -14,8 +14,8 @@ body {
   padding: 0;
   color: #333;
 
-  /* Gradient animation background */
-  background: linear-gradient(-45deg, #2b4eff, #8bc6ec, #f9f9f9, #b721ff);
+  /* Animated background: light blue to white */
+  background: linear-gradient(-45deg, #8bc6ec, #f9f9f9, #8bc6ec, #f9f9f9);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
 }
@@ -146,3 +146,228 @@ section h2 {
 .social-links .fa-linkedin { color: #0077b5; }
 .social-links .fa-youtube { color: #FF0000; }
 .social-links .fa-instagram { color: #c32aa3; }
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #181a20 !important;
+  color: #e0e0e0;
+}
+body.dark-mode header {
+  background: #23263a;
+  color: #ffd84e;
+}
+body.dark-mode main {
+  background: transparent;
+  color: #e0e0e0;
+}
+body.dark-mode footer {
+  background: #23263a;
+  color: #ffd84e;
+}
+body.dark-mode .study-materials-box,
+body.dark-mode .card {
+  background: #23263a;
+  color: #ffd84e;
+  box-shadow: 0 4px 16px rgba(43, 78, 255, 0.10), 0 1.5px 6px rgba(0,0,0,0.15);
+}
+body.dark-mode .card h4 {
+  color: #ffd84e;
+}
+body.dark-mode .button {
+  background-color: #ffd84e;
+  color: #23263a;
+}
+body.dark-mode .button:hover {
+  background: #e6c200;
+}
+body.dark-mode section h2 {
+  color: #ffd84e;
+  border-bottom: 2px solid #ffd84e;
+}
+body.dark-mode .social-links a {
+  color: #ffd84e;
+}
+body.dark-mode .social-links a:hover {
+  color: #b721ff;
+}
+
+/* Toggle Switch Styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 26px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #23263a;
+}
+input:checked + .slider:before {
+  transform: translateX(24px);
+  background-color: #ffd84e;
+}
+/* contact form*/
+/* Contact Form */
+form { margin-top: 32px; display: flex; flex-direction: column; gap: 16px; max-width: 600px; width: 100%; }
+input, textarea { padding: 14px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; }
+textarea { min-height: 150px; }
+.form-btn { background: #ff6b6b; color: #fff; border: none; padding: 16px; font-size: 1rem; border-radius: 5px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 10px rgba(255,107,107,0.3); transition: all 0.3s; }
+.form-btn:hover { background: #ff8e8e; box-shadow: 0 6px 16px rgba(255,107,107,0.4); transform: translateY(-2px); }
+
+/* Footer */
+footer { padding: 24px 0; text-align: center; background: #333; color: #fff; }
+
+/* Animations */
+@keyframes bounceIn {
+  0% { opacity: 0; transform: translateY(-60px) scale(0.8); }
+  60% { opacity: 1; transform: translateY(10px) scale(1.05); }
+  100% { transform: none; }
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+
+/* Work Section */
+.work .projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work .project {
+  font-size: 1.25rem;         /* Larger text */
+  padding: 2rem 2.5rem;       /* More space inside the box */
+  background: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  max-width: 600px;           /* Wider box */
+  width: 100%;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+/* Center About, Work, and Contact sections */
+#about, #work, #contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 48px 0;
+}
+
+/* Add box styling to only the inner content */
+.about-box, .work-box, .contact-box {
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 48px 32px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Make About Me details text larger */
+.about-box p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+/* Responsive: smaller padding on mobile */
+@media (max-width: 768px) {
+  .about-box, .work-box, .contact-box {
+    padding: 24px 8px;
+  }
+  .nav-links { display: none; position: absolute; top: 80px; left: 0; right: 0; background: #fff; flex-direction: column; padding: 16px 0; text-align: center; }
+  .nav-links.show { display: flex; }
+  .nav-links li a { margin: 8px 0; }
+  .hamburger { display: flex; }
+  .projects { flex-direction: column; }
+  .project { width: 100%; }
+  section { padding: 100px 7% 60px; }
+  .intro-heading { font-size: 2.3rem; }
+}/* Dark mode styles for contact form */
+body.dark-mode .contact-box {
+  background: #23263a;       /* Darker background for form container */
+  color: #ffd84e;            /* Light text color */
+  box-shadow: 0 4px 24px rgba(255, 216, 78, 0.15); /* lighter colored shadow */
+}
+
+body.dark-mode .contact-box h2 {
+  color: #ffd84e;            /* Heading color */
+}
+
+/* Inputs and textarea */
+body.dark-mode input,
+body.dark-mode textarea {
+  background: #1a1b23;       /* Dark background for inputs */
+  color: #ffd84e;            /* Light text */
+  border: 1px solid #ffd84e88; /* Light border */
+  caret-color: #ffd84e;      /* Cursor color */
+  transition: border-color 0.3s ease;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #ffd84eaa;          /* Placeholder text in lighter color */
+}
+
+/* Input/textarea focus style in dark mode */
+body.dark-mode input:focus,
+body.dark-mode textarea:focus {
+  border-color: #e6c200;
+  background: #1f2130;
+  outline: none;
+}
+
+/* Submit button */
+body.dark-mode .form-btn {
+  background: #ffd84e;
+  color: #23263a;
+  box-shadow: 0 4px 10px rgba(255, 216, 78, 0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .form-btn:hover {
+  background: #e6c200;
+  box-shadow: 0 6px 16px rgba(230, 194, 0, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Popup message */
+body.dark-mode #popup-message {
+  background: #23263a;
+  color: #ffd84e;
+  box-shadow: 0 4px 24px rgba(255, 216, 78, 0.3);
+}
