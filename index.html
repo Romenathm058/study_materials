@@ -3,14 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MAKAUT MINDS</title>
+  <title>Rkmgecian</title>
   <link rel="stylesheet" href="style.css" />
   <!-- Font Awesome CDN for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("o_XXOGOMBWorUgpqx"); // ✅ Your EmailJS public key
+    })();
+  </script>
 </head>
 <body>
   <header>
-    <h1><B>NOOB INGINEER</B></h1>
+    <div style="position:absolute;top:22px;right:32px;">
+  <label class="switch">
+    <input type="checkbox" id="darkSwitch">
+    <span class="slider"></span>
+  </label>
+</div>
+
+    <h1><b>✨NOOB INGINEER✨</b></h1>
     <p>Study Materials for MAKAUT 1ST year Engineering Students</p>
     <h3><b>&lt;&lt; CSE || ECE || EE || ME || CE &gt;&gt;</b></h3>
   </header>
@@ -117,10 +130,37 @@
           </a>
           <h4>C LANGUAGE</h4>
         </div>
- 
       </div>
     </section>
   </main>
+  
+  <section id="contact" class="contact section-animate">
+    <div class="contact-box">
+      <h2>Contact</h2>
+      <p>
+        Feel free to get in touch with me for collaboration, networking, or just a tech chat!<br>
+        <strong>Email:</strong> <a href="mailto:romenathm2006@gmail.com">romenathm2006@gmail.com</a><br>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/romenath-mondal-9a3a30328"
+           target="_blank" rel="noopener">Romenath Mondal</a>
+      </p>
+
+      <!-- ✅ Contact Form -->
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="title" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="form-btn">Send Message</button>
+      </form>
+
+      <!-- ✅ Popup for message sent -->
+      <div id="popup-message" style="display:none;position:fixed;top:30%;left:50%;transform:translate(-50%,-50%);background:#222;color:#fff;padding:24px 40px;border-radius:8px;box-shadow:0 4px 24px rgba(0,0,0,0.2);font-size:1.2rem;z-index:2000;">
+        Message sent successfully!
+      </div>
+    </div>
+  </section>
+
   <footer>
     &copy; 2025 NOOB INGINEER. All rights reserved.
     <div class="social-links">
@@ -136,8 +176,17 @@
     </div>
   </footer>
 
-
   <script src="index.js"></script>
-  
+  <script>
+    // Feedback Form Handler
+    document.getElementById('feedbackForm').onsubmit = function(e){
+      e.preventDefault();
+      this.reset();
+      document.getElementById('feedback-message').style.display = 'block';
+      setTimeout(function(){
+        document.getElementById('feedback-message').style.display = 'none';
+      }, 5000);
+    };
+  </script>
 </body>
 </html>
