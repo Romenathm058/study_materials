@@ -1,4 +1,4 @@
-# 📚 NOOB iNGINEER
+# 📚 Short C!rcu!t
 
 A simple and organized platform where students can access **study materials** and **YouTube playlists** for MAKAUT semester exams in one place.
 
